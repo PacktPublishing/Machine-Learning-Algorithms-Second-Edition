@@ -9,7 +9,7 @@ This is the code repository for [Machine Learning Algorithms Second Edition](htt
 ## What is this book about?
 Machine learning has gained tremendous popularity for its powerful and fast predictions with large datasets. However, the true forces behind its powerful output are the complex algorithms involving substantial statistical analysis that churn large datasets and generate substantial insight.
 
-This book covers the following exciting features: <First 5 What you'll learn points>
+This book covers the following exciting features: 
 * Study feature selection and the feature engineering process
 * Assess performance and error trade-offs for linear regression
 * Build a data model and understand how it works by using different types of algorithm
@@ -59,7 +59,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Python Deep Learning [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/python-deep-learning?utm_source=github&utm_medium=repository&utm_campaign=9781786464453) [[Amazon]](https://www.amazon.com/dp/1786464454)
 
-## Get to Know the Author(s)
+## Get to Know the Author
 **Giuseppe Bonaccorso**
 Giuseppe Bonaccorso is an experienced team leader/manager in AI, machine/deep learning solution design, management, and delivery. He got his MScEng in electronics in 2005 from the University of Catania, Italy, and continued his studies at the University of Rome Tor Vergata and the University of Essex, UK. His main interests include machine/deep learning, reinforcement learning, big data, bio-inspired adaptive systems, cryptocurrencies, and NLP.
 
@@ -67,7 +67,7 @@ Giuseppe Bonaccorso is an experienced team leader/manager in AI, machine/deep le
 
 ## Other books by the authors
 * [Mastering Machine Learning Algorithms](https://www.packtpub.com/big-data-and-business-intelligence/mastering-machine-learning-algorithms?utm_source=github&utm_medium=repository&utm_campaign=9781788621113)
-* [Machine-Learning-Algorithms](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms?utm_source=github&utm_medium=repository&utm_campaign=9781785889622)
+* [Machine Learning Algorithms](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms?utm_source=github&utm_medium=repository&utm_campaign=9781785889622)
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
