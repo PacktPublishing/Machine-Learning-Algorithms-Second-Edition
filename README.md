@@ -51,7 +51,7 @@ With the following software and hardware list you can run all code files present
                              
 
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www. packtpub. com/sites/default/files/downloads/MachineLearningAlgorithmsSecondEdition_ColorImages. pdf).
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/MachineLearningAlgorithmsSecondEdition_ColorImages.pdf).
 
 
 ### Related products <Other books you may enjoy>
