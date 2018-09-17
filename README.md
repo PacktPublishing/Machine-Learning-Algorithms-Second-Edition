@@ -1,6 +1,6 @@
 # Machine Learning Algorithms Second Edition
 
-<a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms-second-edition?utm_source=github&utm_medium=reposiory"><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10943_MockupCoverNew.png" alt="Book Name" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms-second-edition?utm_source=github&utm_medium=reposiory"><img src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/9781789347999.png" alt="Book Name" height="256px" align="right"></a>
 
 This is the code repository for [Machine Learning Algorithms Second Edition](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms-second-edition?utm_source=github&utm_medium=reposiory), published by Packt.
 
