@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     # Create and train a SMOTE instance
     smote = SMOTE()
-    X_resampled, Y_resampled = smote.fit_sample(X, Y)
+    X_resampled, Y_resampled = smote.fit_resample(X, Y)
 
     # Show original and resampled datasets
     fig, ax = plt.subplots(1, 2, figsize=(20, 8))
