@@ -2,7 +2,7 @@ from __future__ import print_function
 
 import numpy as np
 
-from sklearn.preprocessing import Imputer
+from sklearn.impute import SimpleImputer
 
 # For reproducibility
 np.random.seed(1000)
@@ -13,16 +13,16 @@ if __name__ == '__main__':
 
     # Imputer with mean-strategy
     print('Mean strategy')
-    imp = Imputer(strategy='mean')
+    imp = SimpleImputer(strategy='mean')
     print(imp.fit_transform(data))
 
     # Imputer with median-strategy
     print('Median strategy')
-    imp = Imputer(strategy='median')
+    imp = SimpleImputer(strategy='median')
     print(imp.fit_transform(data))
 
     # Imputer with most-frequent-strategy
     print('Most-frequent strategy')
-    imp = Imputer(strategy='most_frequent')
+    imp = SimpleImputer(strategy='most_frequent')
     print(imp.fit_transform(data))
 
