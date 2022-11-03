@@ -27,8 +27,6 @@ if __name__ == '__main__':
     X = zero_center(digits['data'].astype(np.float64))
     np.random.shuffle(X)
 
-    print(X.shape)
-
     # Peform Fast ICA with 64 components
     fastica = FastICA(n_components=256, max_iter=5000, random_state=1000)
     fastica.fit(X)
