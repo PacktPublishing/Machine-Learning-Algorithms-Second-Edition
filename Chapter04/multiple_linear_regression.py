@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import load_boston
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 
 # For reproducibility
@@ -31,7 +33,7 @@ if __name__ == '__main__':
     show_dataset(boston)
 
     # Create a linear regressor instance
-    lr = LinearRegression(normalize=True)
+    lr = make_pipeline(StandardScaler(with_mean=False), LinearRegression())
 
     # Split dataset
     X_train, X_test, Y_train, Y_test = train_test_split(boston.data, boston.target, test_size=0.1)
