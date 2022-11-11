@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, zero_one_loss, jaccard_similarity_score, confusion_matrix, \
+from sklearn.metrics import accuracy_score, zero_one_loss, jaccard_score, confusion_matrix, \
     precision_score, recall_score, fbeta_score, cohen_kappa_score, classification_report
 
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     print('Accuracy score: %.3f' % accuracy_score(Y_test, lr.predict(X_test)))
     print('Zero-one loss (normalized): %.3f' % zero_one_loss(Y_test, lr.predict(X_test)))
     print('Zero-one loss (unnormalized): %.3f' % zero_one_loss(Y_test, lr.predict(X_test), normalize=False))
-    print('Jaccard similarity score: %.3f' % jaccard_similarity_score(Y_test, lr.predict(X_test)))
+    print('Jaccard similarity score: %.3f' % jaccard_score(Y_test, lr.predict(X_test)))
 
     # Compute confusion matrix
     cm = confusion_matrix(y_true=Y_test, y_pred=lr.predict(X_test))
