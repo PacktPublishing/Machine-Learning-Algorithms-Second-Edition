@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Install Imbalanced-Learning with: pip install -U imbalanced-learn
-# For further information: http://contrib.scikit-learn.org/imbalanced-learn/stable/index.html
+# For further information: https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html
 from imblearn.over_sampling import SMOTE
 
 from sklearn.datasets import make_classification
