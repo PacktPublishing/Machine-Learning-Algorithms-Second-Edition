@@ -50,7 +50,7 @@ if __name__ == '__main__':
     show_dataset(X, Y)
 
     # Create an isotonic regressor
-    ir = IsotonicRegression(-6, 10)
+    ir = IsotonicRegression(y_min = -6, y_max = 10)
     Yi = ir.fit_transform(X, Y)
 
     # Create a segment list

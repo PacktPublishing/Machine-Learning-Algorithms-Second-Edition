@@ -35,4 +35,5 @@ if __name__ == '__main__':
     print('SPCA components shape:')
     print(spca.components_.shape)
 
+    print(np.mean(X_spca == 0))
 

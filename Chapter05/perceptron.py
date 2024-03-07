@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     # Create perceptron as SGD instance
     # The same result can be obtained using directly the class sklearn.linear_model.Perceptron
-    sgd = SGDClassifier(loss='perceptron', learning_rate='optimal', n_iter=10)
+    sgd = SGDClassifier(loss='perceptron', learning_rate='optimal', n_iter_no_change=10)
     sgd_scores = cross_val_score(sgd, X, Y, scoring='accuracy', cv=10)
     print('Perceptron CV average score: %.3f' % sgd_scores.mean())
 

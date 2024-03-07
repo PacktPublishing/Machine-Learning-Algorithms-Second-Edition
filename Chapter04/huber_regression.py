@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from sklearn.linear_model import LinearRegression, HuberRegressor
-
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 # For reproducibility
 np.random.seed(1000)
@@ -40,9 +41,9 @@ if __name__ == '__main__':
     show_dataset(X, Y)
 
     # Create a linear regressor
-    lr = LinearRegression(normalize=True)
+    lr = make_pipeline(StandardScaler(with_mean=False), LinearRegression())
     lr.fit(X.reshape(-1, 1), Y.reshape(-1, 1))
-    print('Standard regressor: y = %.3fx + %.3f' % (lr.coef_, lr.intercept_))
+    print('Standard regressor: y = %.3fx + %.3f' % (lr[1].coef_, lr[1].intercept_))
 
     # Create a Huber regressor
     hr = HuberRegressor(epsilon=1.25)

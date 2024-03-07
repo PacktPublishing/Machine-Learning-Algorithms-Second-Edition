@@ -11,13 +11,10 @@ from sklearn.svm import SVC
 # For reproducibility
 np.random.seed(1000)
 
-# Set a local folder here
-olivetti_home = ''
-
 
 if __name__ == '__main__':
     # Load dataset
-    faces = fetch_olivetti_faces(data_home=olivetti_home)
+    faces = fetch_olivetti_faces()
 
     # Define a param grid
     param_grid = [

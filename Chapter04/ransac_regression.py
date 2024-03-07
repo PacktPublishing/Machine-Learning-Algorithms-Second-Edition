@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from sklearn.linear_model import LinearRegression, RANSACRegressor
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 
 # For reproducibility
@@ -14,7 +16,7 @@ nb_noise_samples = 150
 
 
 def show_dataset(X, Y):
-    fig, ax = plt.subplots(1, 1, figsize=(30, 25))
+    fig, ax = plt.subplots(1, 1, figsize=(10, 8))
 
     ax.scatter(X, Y)
     ax.set_xlabel('X')
@@ -38,11 +40,12 @@ if __name__ == '__main__':
     show_dataset(X, Y)
 
     # Create a linear regressor
-    lr = LinearRegression(normalize=True)
+    lr = make_pipeline(StandardScaler(with_mean=False), LinearRegression())
     lr.fit(X.reshape(-1, 1), Y.reshape(-1, 1))
-    print('Standard regressor: y = %.3fx + %.3f' % (lr.coef_, lr.intercept_))
+    print('Standard regressor: y = %.3fx + %.3f' % (lr[1].coef_, lr[1].intercept_))
 
     # Create RANSAC regressor
-    rs = RANSACRegressor(lr)
+    rs = RANSACRegressor(lr, min_samples=2)
     rs.fit(X.reshape(-1, 1), Y.reshape(-1, 1))
-    print('RANSAC regressor: y = %.3fx + %.3f' % (rs.estimator_.coef_, rs.estimator_.intercept_))
+    rss = rs.estimator_[1]
+    print('RANSAC regressor: y = %.3fx + %.3f' % (rss.coef_, rss.intercept_))

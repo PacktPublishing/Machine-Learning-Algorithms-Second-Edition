@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 
 # For reproducibility
@@ -38,7 +40,7 @@ if __name__ == '__main__':
     # Split dataset
     X_train, X_test, Y_train, Y_test = train_test_split(X.reshape(-1, 1), Y.reshape(-1, 1), test_size=0.25)
 
-    lr = LinearRegression(normalize=True)
+    lr = make_pipeline(StandardScaler(with_mean=False), LinearRegression())
     lr.fit(X_train, Y_train)
     print('Linear regression score: %.3f' % lr.score(X_train, Y_train))
 

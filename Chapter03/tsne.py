@@ -23,9 +23,8 @@ if __name__ == '__main__':
 
     # Plot the t-SNE result
     fig, ax = plt.subplots(figsize=(18, 10))
-
+    ax.scatter(X_tsne[:, 0], X_tsne[:, 1], color=cm.rainbow(digits['target'] * 10), marker='o', s=20)
     for i in range(400):
-        ax.scatter(X_tsne[:, 0], X_tsne[:, 1], color=cm.rainbow(digits['target'] * 10), marker='o', s=20)
         ax.annotate('%d' % digits['target'][i], xy=(X_tsne[i, 0] + 1, X_tsne[i, 1] + 1))
 
     ax.set_xlabel(r'$x_0$')
